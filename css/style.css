@@ -1,0 +1,409 @@
+/* __________  GENERAL _________ */
+:root {
+  --color-primary-brand: #4D5AE5;
+  --color-dark: #2E2F42;
+  --color-succes: #31D0AA;
+  --color-text: #434455;
+  --color-subtle-text: #8E8F99;
+  --color-accent: #E7E9FC;
+  --color-light: #F4F4FD;
+
+  --font-main: "Roboto", sans-serif;
+  --font-secondary: "Raleway", sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-text);
+  margin: auto
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a, button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo {
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-dark);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.title-min {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1152px;
+  padding-left: 12px;
+  padding-right: 12px;
+  /* outline: 2px solid black; */              /* для контролю за контейнером */
+}
+
+
+/* _____________ HEADER ____________ */
+
+header {
+  box-shadow: 0px 2px 5px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  position: relative
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  }
+
+.logo_nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo-top {
+color: var(--color-dark);
+margin-right: 77px;
+}
+
+.logo-span {
+  color: var(--color-primary-brand);
+}
+
+.header-list {
+  display: flex;
+}
+
+/* відстань для навігації (по лекції Репети) */
+
+.header-list li:not(:last-child) {
+  margin-right: 40px;
+}
+
+
+.header-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
+  color: var(--color-dark);
+  display: block;
+  padding: 24px 0; /* падінг для ефекту ховера покругу (по лекції Владислава Бондара) */
+  
+}
+
+.header-link:hover, 
+.header-link:focus {
+  color: var(--color-text);
+}
+.header-link:active {
+  color: var(--color-primary-brand);
+}
+
+
+
+.header-adress {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-adress-link {
+  color: var(--color-text)
+}
+.header-adress li:not(:first-child) {
+  margin-left: 40px;
+}
+
+.header-adress-link:hover, 
+.header-adress-link:focus {
+  color: var(--color-primary-brand);
+}
+
+
+/* ________ SECTION HERO ___________ */
+.hero {
+  background-color: var(--color-dark);
+  text-align: center;
+  padding-top: 192px;
+  padding-bottom: 192px;
+}
+
+.hero-main {
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  margin-bottom: 48px;
+}
+
+.hero-btn {
+  min-width: 170px;
+  padding: 16px 32px;
+  line-height: calc(19 / 16);
+  color: #FFFFFF;
+  background-color: var(--color-primary-brand);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hero-btn:hover, 
+.hero-btn:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.hero-btn:active {
+  background-color: #404BBF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+/* __________ SECTION ADVANTAGE ___________ */
+
+.advantage {
+
+}
+
+.advantage-title {
+  
+}
+
+.advantage-list {
+  display: flex;
+}
+
+.advantage-link {
+  width: 264px;
+  margin-right: 24px;
+}
+
+.advantage-link:last-child {
+  margin-right: 0px;
+}
+
+.advantage-link-title {
+  color: var(--color-dark);
+}
+
+.advantage-link-text {
+}
+
+
+/* _________ SECTION CREATE _________ */
+
+.create {
+  padding-top: 0;
+}
+
+.create-title {
+  color: var(--color-dark);
+  margin-top: 0;
+  margin-bottom: 72px;
+}
+
+.create-list {
+  display: flex;
+}
+
+.create-list li {
+  margin-right: 24px;
+}
+
+.create-list li:last-child {
+  margin-right: 0;
+}
+
+.create-img {
+  display: block;
+}
+
+
+/* ___________ SECTION PERSONAL ________ */
+
+.personal {
+  background-color: var(--color-light);
+}
+
+.personal-title {
+  color: var(--color-dark);
+  margin-bottom: 72px;
+}
+
+.personal-list {
+  display: flex;
+}
+
+.personal-card {
+  width: 264px;
+  margin-right: 24px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.personal-card:last-child {
+  margin-right: 0;
+}
+
+.personal-cont {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.personal-card-image {}
+
+.personal-card-title {
+  text-align: center;
+  color: var(--color-dark);
+}
+
+.personal-card-text {
+  text-align: center;
+}
+
+/* _________ FOOTER ________ */
+
+.footer {
+  background-color: var(--color-dark);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.logo-bottom {
+  color: var(--color-light);
+}
+
+.footer-text {
+  width: 264px;
+    margin-top: 16px;
+    color: var(--color-accent);
+}
+
+/* ___________ HTML PORTFOLIO _________ */
+
+.portfolio {
+  padding-top: 100px;
+  
+}
+
+.portfolio-title {}
+
+.filter-list {
+ display: flex;
+ justify-content: center;
+ margin-bottom: 72px;
+}
+
+.filter-list li {
+  margin-right: 24px;
+}
+
+.filter-list li:last-child {
+  margin-right: 0;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  color: var(--color-primary-brand);
+  background-color: var(--color-light);
+  border: 1px solid var(--color-accent);
+}
+
+.filter-btn:hover, 
+.filter-btn:focus {
+  color: #FFFFFF;
+  background-color: var(--color-primary-brand);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.design-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -24px -12px;
+}
+
+.design-card {
+  width: 360px;
+
+  margin: 24px 12px;
+
+  background: #FFFFFF;
+  border-bottom: 0.5px solid #F4F4FD;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.design-card-image {
+  display: block;
+}
+
+.design-card-cont {
+  padding: 32px 16px;
+}
+
+.design-card-title {
+  color: var(--color-dark);
+}
+
+.design-card-text {}
+
+.design-card-hover {}
