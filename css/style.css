@@ -102,6 +102,26 @@ a, button {
   /* outline: 2px solid black; */              /* для контролю за контейнером */
 }
 
+.card-soc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.soc-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.soc-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: var(--color-light);
+}
+
+
 
 /* _____________ HEADER ____________ */
 
@@ -181,10 +201,15 @@ margin-right: 77px;
 
 /* ________ SECTION HERO ___________ */
 .hero {
-  background-color: var(--color-dark);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/image/hero-bg.jpg");
+  background-position: center;
+  background-size: 1440px;
+  background-repeat: no-repeat;
+  
+
   text-align: center;
-  padding-top: 192px;
-  padding-bottom: 192px;
+  padding-top: 190px;
+  padding-bottom: 190px;
 }
 
 .hero-main {
@@ -238,6 +263,19 @@ margin-right: 77px;
 
 .advantage-link:last-child {
   margin-right: 0px;
+}
+
+.advantage-link-img {
+  width: 264px;
+  height: 112px;
+  background: #F4F4FD;
+  border-radius: 4px;
+}
+
+.advantage-svg {
+  width: 64px;
+  height: 64px;
+  margin: 24px 100px;
 }
 
 .advantage-link-title {
@@ -321,7 +359,83 @@ margin-right: 77px;
   text-align: center;
 }
 
+
+.personal-card-soc {
+  margin: 8px 18px 0;
+}
+
+.personal-card-soc-item {
+  background-color: var(--color-primary-brand);
+}
+
+.personal-card-soc-link {
+}
+
+.personal-card-soc-svg{
+  fill: currentColor;
+  margin: 30%;
+}
+
+
+
+
+
+
+/* ____________________ Section Customers ________________ */
+
+.customers {}
+
+.customers-title {
+  color: var(--color-dark);
+  margin-bottom: 72px;
+}
+
+.customers-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.customers-item {
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--color-subtle-text);
+  border-radius: 4px;
+}
+
+.customers-item:hover {
+  border-color: var(--color-primary-brand);
+}
+
+.customers-item:hover .customers-link-svg {
+  fill: var(--color-primary-brand);
+}
+
+
+.customers-link {
+  width: 100%;
+  height: 100%;
+  color: var(--color-subtle-text);
+}
+
+.customers-link-svg {
+  width: 100%;
+  height: 100%;
+  padding: 0 32px;
+
+  fill: currentColor;
+}
+
+
+
+
+
+
 /* _________ FOOTER ________ */
+
+.footer .container {
+  display: flex;
+}
 
 .footer {
   background-color: var(--color-dark);
@@ -335,9 +449,46 @@ margin-right: 77px;
 
 .footer-text {
   width: 264px;
-    margin-top: 16px;
-    color: var(--color-accent);
+  margin-top: 16px;
+  color: var(--color-accent);
 }
+
+
+.social {
+  width: 208px;
+  height: 80px;
+  margin-left: 120px;
+}
+
+.social-title {
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.social-card-soc {
+}
+
+.social-card-soc-item {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-card-soc-item:hover {
+  background-color: #31D0AA;
+}
+
+
+.social-card-soc-link {
+}
+
+.social-card-soc-svg {
+  fill: currentColor;
+  margin: 20%;
+}
+
+
+
 
 /* ___________ HTML PORTFOLIO _________ */
 
@@ -392,6 +543,11 @@ margin-right: 77px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+.design-card:hover {
+  border: 0.5px solid #F4F4FD;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .design-card-image {
   display: block;
 }
@@ -407,3 +563,6 @@ margin-right: 77px;
 .design-card-text {}
 
 .design-card-hover {}
+
+
+
