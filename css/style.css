@@ -201,7 +201,7 @@ margin-right: 77px;
 
 /* ________ SECTION HERO ___________ */
 .hero {
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("./image/hero-bg.jpg");
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../image/hero-bg.jpg");
   background-position: center;
   background-size: 1440px;
   background-repeat: no-repeat;
